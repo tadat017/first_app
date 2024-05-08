@@ -1,0 +1,22 @@
+<h1>新規投稿ページ</h1>
+
+<%= form_with url: "/posts",method: :post, local:true do|form| %>
+ <%= form.text_field :content%>
+ <%= form.submit '投稿する'%>
+<% end %>
+
+
+
+
+
+
+
+
+
+
+
+<%#例】リンク先をURLで指定する場合%>
+<%# link_to 'リンクに表示する文字', 'リンク先のURL' %>
+
+<%#【例】リンク先をパスで指定する場合%>
+<%# link_to 'リンクに表示する文字', 'パス', method: :HTTPメソッド %>
